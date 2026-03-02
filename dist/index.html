@@ -1,9 +1,155 @@
-<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.17.1"><title>Vault CMS - Use Obsidian as a CMS for Astro</title><meta name="description" content="Turn your Obsidian vault into a powerful content management system for your Astro website. Set up in seconds."><!-- Open Graph --><meta property="og:title" content="Vault CMS - Use Obsidian as a CMS for Astro"><meta property="og:description" content="Turn your Obsidian vault into a powerful content management system for your Astro website. Set up in seconds."><meta property="og:type" content="website"><meta property="og:url" content="https://vaultcms.org"><!-- Theme Color --><meta name="theme-color" content="#110f18"><!-- Google Fonts --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/_astro/index.Dy2VH-z9.css"></head> <body class="font-sans antialiased bg-background text-foreground">  <div class="min-h-screen bg-background selection:bg-primary/20 selection:text-primary flex flex-col"> <div class="max-w-2xl mx-auto px-6 sm:px-8 w-full flex-1">  <header class="flex items-center justify-between py-6"> <a href="/" class="block"> <img src="/.netlify/images?url=_astro%2Fvault-cms-logo-horizontal-on-dark.bR2eNjhE.png&#38;w=160&#38;h=40" alt="Vault CMS" loading="eager" decoding="async" fetchpriority="auto" width="160" height="40" class="h-8 w-auto hidden dark:block"> <img src="/.netlify/images?url=_astro%2Fvault-cms-logo-horizontal.CDA75F6e.png&#38;w=160&#38;h=40" alt="Vault CMS" loading="eager" decoding="async" fetchpriority="auto" width="160" height="40" class="h-8 w-auto block dark:hidden"> </a> <nav class="flex items-center gap-5"> <a href="https://github.com/davidvkimball/vault-cms" target="_blank" rel="noopener noreferrer" class="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5" title="GitHub"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github w-5 h-5" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> </a> </nav> </header>  <section class="pt-8 sm:pt-12 pb-10 sm:pb-14"> <h1 class="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.15] tracking-tight text-foreground text-balance">
-Use <span class="text-primary">Obsidian</span> as a CMS
-<br class="hidden sm:block"> for your Astro site.
-</h1> </section>  <section class="pb-10 sm:pb-14"> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="1cIwgY" prefix="r3" component-url="/_astro/steps.BcXocrJ3.js" component-export="Steps" renderer-url="/_astro/client.Dc9Vh3na.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;Steps&quot;,&quot;value&quot;:true}" await-children><ol class="flex flex-col gap-0"><li class="relative pl-12 pb-10 group"><div class="absolute left-[15px] top-[34px] bottom-[-2px] w-[2px]"><div class="absolute inset-0 bg-border"></div><div class="absolute inset-0 transition-all duration-500" style="opacity:0;background:linear-gradient(to bottom, hsl(var(--primary)), hsl(var(--secondary)));box-shadow:none"></div></div><div class="absolute left-0 top-[2px] w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300" style="background:hsl(var(--muted));box-shadow:none"><span class="text-xs font-heading transition-colors duration-300" style="color:hsl(var(--muted-foreground))">1</span></div><h3 class="font-heading text-lg text-foreground">Run the installer in your Astro project</h3><div class="mt-5"><div class="flex items-center gap-0 relative z-10"><button class="px-3.5 py-1.5 text-[13px] font-heading transition-colors text-muted-foreground hover:text-foreground">npm</button><button class="px-3.5 py-1.5 text-[13px] font-heading transition-colors bg-card text-foreground border border-border border-b-card rounded-t-md -mb-px">pnpm</button><button class="px-3.5 py-1.5 text-[13px] font-heading transition-colors text-muted-foreground hover:text-foreground">yarn</button></div><div class="relative flex items-center justify-between bg-card border border-border rounded-lg rounded-tl-none px-4 py-3.5"><code class="font-mono text-sm text-foreground"><span class="text-muted-foreground select-none mr-2">$</span>pnpm create vault-cms</code><button class="ml-4 p-1.5 rounded text-muted-foreground hover:text-foreground transition-colors flex-shrink-0" aria-label="Copy to clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy w-3.5 h-3.5" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></div></div></li><li class="relative pl-12 pb-10 group"><div class="absolute left-[15px] top-[34px] bottom-[-2px] w-[2px]"><div class="absolute inset-0 bg-border"></div><div class="absolute inset-0 transition-all duration-500" style="opacity:0;background:linear-gradient(to bottom, hsl(var(--secondary)), hsl(var(--primary)));box-shadow:none"></div></div><div class="absolute left-0 top-[2px] w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300" style="background:hsl(var(--muted));box-shadow:none"><span class="text-xs font-heading transition-colors duration-300" style="color:hsl(var(--muted-foreground))">2</span></div><h3 class="font-heading text-lg text-foreground">Open the install folder with Obsidian</h3><p class="mt-2 text-sm text-muted-foreground leading-relaxed max-w-md">Open the folder where Vault CMS was installed as a vault in Obsidian. For example, if you installed to<!-- --> <code class="font-mono text-[13px] text-accent-foreground bg-muted px-1.5 py-0.5 rounded">src/content</code>, open that folder.</p></li><li class="relative pl-12"><div class="absolute left-0 top-[2px] w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300" style="background:hsl(var(--muted));box-shadow:none"><span class="text-xs font-heading transition-colors duration-300" style="color:hsl(var(--muted-foreground))">3</span></div><h3 class="font-heading text-lg text-foreground">Walk through the wizard</h3><p class="mt-2 text-sm text-muted-foreground leading-relaxed max-w-md">The setup wizard detects your theme and configures your content types. Once configured, you<!-- -->&#x27;<!-- -->re ready to start publishing.</p></li></ol><!--astro:end--></astro-island> <div class="mt-12 flex justify-center"> <a href="https://docs.vaultcms.org" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-heading font-medium transition-all shadow-md hover:shadow-primary/20 active:scale-95 group">
-Explore Docs
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5 transition-transform group-hover:translate-x-1" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg> </a> </div> </section> </div>  <footer class="py-6 text-center text-sm text-muted-foreground">
-&copy; 2026  <a href="https://davidvkimball.com" target="_blank" rel="noopener noreferrer" class="hover:text-foreground transition-colors">
-David V. Kimball
-</a> </footer> </div>  </body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="generator" content="Astro v5.17.1">
+    <title>Vault CMS - Use Obsidian as a CMS for Astro</title>
+    <meta name="description"
+        content="Turn your Obsidian vault into a powerful content management system for your Astro website. Set up in seconds.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Vault CMS - Use Obsidian as a CMS for Astro">
+    <meta property="og:description"
+        content="Turn your Obsidian vault into a powerful content management system for your Astro website. Set up in seconds.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vaultcms.org"><!-- Theme Color -->
+    <meta name="theme-color" content="#110f18"><!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/_astro/index.Dy2VH-z9.css">
+</head>
+
+<body class="font-sans antialiased bg-background text-foreground">
+    <div class="min-h-screen bg-background selection:bg-primary/20 selection:text-primary flex flex-col">
+        <div class="max-w-2xl mx-auto px-6 sm:px-8 w-full flex-1">
+            <header class="flex items-center justify-between py-6"> <a href="/" class="block"> <img
+                        src="/.netlify/images?url=_astro%2Fvault-cms-logo-horizontal-on-dark.bR2eNjhE.png&#38;w=160&#38;h=40"
+                        alt="Vault CMS" loading="eager" decoding="async" fetchpriority="auto" width="160" height="40"
+                        class="h-8 w-auto hidden dark:block"> <img
+                        src="/.netlify/images?url=_astro%2Fvault-cms-logo-horizontal.CDA75F6e.png&#38;w=160&#38;h=40"
+                        alt="Vault CMS" loading="eager" decoding="async" fetchpriority="auto" width="160" height="40"
+                        class="h-8 w-auto block dark:hidden"> </a>
+                <nav class="flex items-center gap-5"> <a href="https://github.com/davidvkimball/vault-cms"
+                        target="_blank" rel="noopener noreferrer"
+                        class="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5"
+                        title="GitHub"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github w-5 h-5"
+                            aria-hidden="true">
+                            <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                            </path>
+                            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                        </svg> </a> </nav>
+            </header>
+            <section class="pt-8 sm:pt-12 pb-10 sm:pb-14">
+                <h1
+                    class="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.15] tracking-tight text-foreground text-balance">
+                    Use <span class="text-primary">Obsidian</span> as a CMS
+                    <br class="hidden sm:block"> for your Astro site.
+                </h1>
+            </section>
+            <section class="pb-10 sm:pb-14">
+                <style>
+                    astro-island,
+                    astro-slot,
+                    astro-static-slot {
+                        display: contents
+                    }
+                </style>
+                <script>(() => { var e = async t => { await (await t())() }; (self.Astro || (self.Astro = {})).load = e; window.dispatchEvent(new Event("astro:load")); })();</script>
+                <script>(() => { var A = Object.defineProperty; var g = (i, o, a) => o in i ? A(i, o, { enumerable: !0, configurable: !0, writable: !0, value: a }) : i[o] = a; var d = (i, o, a) => g(i, typeof o != "symbol" ? o + "" : o, a); { let i = { 0: t => m(t), 1: t => a(t), 2: t => new RegExp(t), 3: t => new Date(t), 4: t => new Map(a(t)), 5: t => new Set(a(t)), 6: t => BigInt(t), 7: t => new URL(t), 8: t => new Uint8Array(t), 9: t => new Uint16Array(t), 10: t => new Uint32Array(t), 11: t => 1 / 0 * t }, o = t => { let [l, e] = t; return l in i ? i[l](e) : void 0 }, a = t => t.map(o), m = t => typeof t != "object" || t === null ? t : Object.fromEntries(Object.entries(t).map(([l, e]) => [l, o(e)])); class y extends HTMLElement { constructor() { super(...arguments); d(this, "Component"); d(this, "hydrator"); d(this, "hydrate", async () => { var b; if (!this.hydrator || !this.isConnected) return; let e = (b = this.parentElement) == null ? void 0 : b.closest("astro-island[ssr]"); if (e) { e.addEventListener("astro:hydrate", this.hydrate, { once: !0 }); return } let c = this.querySelectorAll("astro-slot"), n = {}, h = this.querySelectorAll("template[data-astro-template]"); for (let r of h) { let s = r.closest(this.tagName); s != null && s.isSameNode(this) && (n[r.getAttribute("data-astro-template") || "default"] = r.innerHTML, r.remove()) } for (let r of c) { let s = r.closest(this.tagName); s != null && s.isSameNode(this) && (n[r.getAttribute("name") || "default"] = r.innerHTML) } let p; try { p = this.hasAttribute("props") ? m(JSON.parse(this.getAttribute("props"))) : {} } catch (r) { let s = this.getAttribute("component-url") || "<unknown>", v = this.getAttribute("component-export"); throw v && (s += ` (export ${v})`), console.error(`[hydrate] Error parsing props for component ${s}`, this.getAttribute("props"), r), r } let u; await this.hydrator(this)(this.Component, p, n, { client: this.getAttribute("client") }), this.removeAttribute("ssr"), this.dispatchEvent(new CustomEvent("astro:hydrate")) }); d(this, "unmount", () => { this.isConnected || this.dispatchEvent(new CustomEvent("astro:unmount")) }) } disconnectedCallback() { document.removeEventListener("astro:after-swap", this.unmount), document.addEventListener("astro:after-swap", this.unmount, { once: !0 }) } connectedCallback() { if (!this.hasAttribute("await-children") || document.readyState === "interactive" || document.readyState === "complete") this.childrenConnectedCallback(); else { let e = () => { document.removeEventListener("DOMContentLoaded", e), c.disconnect(), this.childrenConnectedCallback() }, c = new MutationObserver(() => { var n; ((n = this.lastChild) == null ? void 0 : n.nodeType) === Node.COMMENT_NODE && this.lastChild.nodeValue === "astro:end" && (this.lastChild.remove(), e()) }); c.observe(this, { childList: !0 }), document.addEventListener("DOMContentLoaded", e) } } async childrenConnectedCallback() { let e = this.getAttribute("before-hydration-url"); e && await import(e), this.start() } async start() { let e = JSON.parse(this.getAttribute("opts")), c = this.getAttribute("client"); if (Astro[c] === void 0) { window.addEventListener(`astro:${c}`, () => this.start(), { once: !0 }); return } try { await Astro[c](async () => { let n = this.getAttribute("renderer-url"), [h, { default: p }] = await Promise.all([import(this.getAttribute("component-url")), n ? import(n) : () => () => { }]), u = this.getAttribute("component-export") || "default"; if (!u.includes(".")) this.Component = h[u]; else { this.Component = h; for (let f of u.split(".")) this.Component = this.Component[f] } return this.hydrator = p, this.hydrate }, e, this) } catch (n) { console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`, n) } } attributeChangedCallback() { this.hydrate() } } d(y, "observedAttributes", ["props"]), customElements.get("astro-island") || customElements.define("astro-island", y) } })();</script>
+                <astro-island uid="1cIwgY" prefix="r3" component-url="/_astro/steps.BcXocrJ3.js"
+                    component-export="Steps" renderer-url="/_astro/client.Dc9Vh3na.js" props="{}" ssr client="load"
+                    opts="{&quot;name&quot;:&quot;Steps&quot;,&quot;value&quot;:true}" await-children>
+                    <ol class="flex flex-col gap-0">
+                        <li class="relative pl-12 pb-10 group">
+                            <div class="absolute left-[15px] top-[34px] bottom-[-2px] w-[2px]">
+                                <div class="absolute inset-0 bg-border"></div>
+                                <div class="absolute inset-0 transition-all duration-500"
+                                    style="opacity:0;background:linear-gradient(to bottom, hsl(var(--primary)), hsl(var(--secondary)));box-shadow:none">
+                                </div>
+                            </div>
+                            <div class="absolute left-0 top-[2px] w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300"
+                                style="background:hsl(var(--muted));box-shadow:none"><span
+                                    class="text-xs font-heading transition-colors duration-300"
+                                    style="color:hsl(var(--muted-foreground))">1</span></div>
+                            <h3 class="font-heading text-lg text-foreground">Run the installer in your Astro project
+                            </h3>
+                            <div class="mt-5">
+                                <div class="flex items-center gap-0 relative z-10"><button
+                                        class="px-3.5 py-1.5 text-[13px] font-heading transition-colors text-muted-foreground hover:text-foreground">npm</button><button
+                                        class="px-3.5 py-1.5 text-[13px] font-heading transition-colors bg-card text-foreground border border-border border-b-card rounded-t-md -mb-px">pnpm</button><button
+                                        class="px-3.5 py-1.5 text-[13px] font-heading transition-colors text-muted-foreground hover:text-foreground">yarn</button>
+                                </div>
+                                <div
+                                    class="relative flex items-center justify-between bg-card border border-border rounded-lg rounded-tl-none px-4 py-3.5">
+                                    <code
+                                        class="font-mono text-sm text-foreground"><span class="text-muted-foreground select-none mr-2">$</span>pnpm create vaultcms</code><button
+                                        class="ml-4 p-1.5 rounded text-muted-foreground hover:text-foreground transition-colors flex-shrink-0"
+                                        aria-label="Copy to clipboard"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-copy w-3.5 h-3.5" aria-hidden="true">
+                                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                                        </svg></button></div>
+                            </div>
+                        </li>
+                        <li class="relative pl-12 pb-10 group">
+                            <div class="absolute left-[15px] top-[34px] bottom-[-2px] w-[2px]">
+                                <div class="absolute inset-0 bg-border"></div>
+                                <div class="absolute inset-0 transition-all duration-500"
+                                    style="opacity:0;background:linear-gradient(to bottom, hsl(var(--secondary)), hsl(var(--primary)));box-shadow:none">
+                                </div>
+                            </div>
+                            <div class="absolute left-0 top-[2px] w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300"
+                                style="background:hsl(var(--muted));box-shadow:none"><span
+                                    class="text-xs font-heading transition-colors duration-300"
+                                    style="color:hsl(var(--muted-foreground))">2</span></div>
+                            <h3 class="font-heading text-lg text-foreground">Open the install folder with Obsidian</h3>
+                            <p class="mt-2 text-sm text-muted-foreground leading-relaxed max-w-md">Open the folder where
+                                Vault CMS was installed as a vault in Obsidian. For example, if you installed to<!-- -->
+                                <code
+                                    class="font-mono text-[13px] text-accent-foreground bg-muted px-1.5 py-0.5 rounded">src/content</code>,
+                                open that folder.</p>
+                        </li>
+                        <li class="relative pl-12">
+                            <div class="absolute left-0 top-[2px] w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300"
+                                style="background:hsl(var(--muted));box-shadow:none"><span
+                                    class="text-xs font-heading transition-colors duration-300"
+                                    style="color:hsl(var(--muted-foreground))">3</span></div>
+                            <h3 class="font-heading text-lg text-foreground">Walk through the wizard</h3>
+                            <p class="mt-2 text-sm text-muted-foreground leading-relaxed max-w-md">The setup wizard
+                                detects your theme and configures your content types. Once configured,
+                                you<!-- -->&#x27;<!-- -->re ready to start publishing.</p>
+                        </li>
+                    </ol><!--astro:end-->
+                </astro-island>
+                <div class="mt-12 flex justify-center"> <a href="https://docs.vaultcms.org" target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-heading font-medium transition-all shadow-md hover:shadow-primary/20 active:scale-95 group">
+                        Explore Docs
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-arrow-right w-5 h-5 transition-transform group-hover:translate-x-1"
+                            aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg> </a> </div>
+            </section>
+        </div>
+        <footer class="py-6 text-center text-sm text-muted-foreground">
+            &copy; 2026 <a href="https://davidvkimball.com" target="_blank" rel="noopener noreferrer"
+                class="hover:text-foreground transition-colors">
+                David V. Kimball
+            </a> </footer>
+    </div>
+</body>
+
+</html>

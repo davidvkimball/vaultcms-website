@@ -4,9 +4,9 @@ import { useState } from "react"
 import { Check, Copy } from "lucide-react"
 
 const managers = [
-  { id: "npm", label: "npm", cmd: "npm create vault-cms" },
-  { id: "pnpm", label: "pnpm", cmd: "pnpm create vault-cms" },
-  { id: "yarn", label: "yarn", cmd: "yarn create vault-cms" },
+  { id: "npm", label: "npm", cmd: "npm create vaultcms" },
+  { id: "pnpm", label: "pnpm", cmd: "pnpm create vaultcms" },
+  { id: "yarn", label: "yarn", cmd: "yarn create vaultcms" },
 ] as const
 
 export function InstallTabs() {
@@ -31,11 +31,10 @@ export function InstallTabs() {
               setActive(m.id)
               setCopied(false)
             }}
-            className={`px-3.5 py-1.5 text-[13px] font-heading transition-colors ${
-              active === m.id
-                ? "bg-card text-foreground border border-border border-b-card rounded-t-md -mb-px"
-                : "text-muted-foreground hover:text-foreground"
-            }`}
+            className={`px-3.5 py-1.5 text-[13px] font-heading transition-colors ${active === m.id
+              ? "bg-card text-foreground border border-border border-b-card rounded-t-md -mb-px"
+              : "text-muted-foreground hover:text-foreground"
+              }`}
           >
             {m.label}
           </button>
