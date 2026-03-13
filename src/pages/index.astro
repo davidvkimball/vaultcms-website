@@ -1,38 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Github, ArrowRight } from "lucide-react";
-import { Steps } from "../components/steps";
-import { Image } from "astro:assets";
-import logoLight from "../assets/vault-cms-logo-horizontal.png";
-import logoDark from "../assets/vault-cms-logo-horizontal-on-dark.png";
+import { Github } from "lucide-react";
+import { MainTabs } from "../components/MainTabs";
 ---
 
 <Layout>
   <div class="min-h-screen bg-background selection:bg-primary/20 selection:text-primary flex flex-col">
     <div class="max-w-2xl mx-auto px-6 sm:px-8 w-full flex-1">
       {/* Header */}
-      <header class="flex items-center justify-between py-6">
-        <a href="/" class="block">
-          <Image
-            src={logoDark}
-            alt="Vault CMS"
-            width={160}
-            height={40}
-            class="h-8 w-auto hidden dark:block"
-            loading="eager"
-          />
-          <Image
-            src={logoLight}
-            alt="Vault CMS"
-            width={160}
-            height={40}
-            class="h-8 w-auto block dark:hidden"
-            loading="eager"
-          />
-        </a>
-        <nav class="flex items-center gap-5">
+      <header class="flex items-center justify-between pt-8 pb-4">
+        <a href="/" class="logo-link block select-none" aria-label="Vault CMS Homepage"></a>
+        <nav class="flex items-center gap-4">
           <a
-            href="https://github.com/davidvkimball/vault-cms"
+            href="https://github.com/davidvkimball/vaultcms"
             target="_blank"
             rel="noopener noreferrer"
             class="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5"
@@ -40,35 +20,29 @@ import logoDark from "../assets/vault-cms-logo-horizontal-on-dark.png";
           >
             <Github className="w-5 h-5" />
           </a>
+          <a
+            href="https://docs.vaultcms.org"
+            class="text-xs font-semibold tracking-wide text-foreground px-4 py-1.5 rounded-full border border-border hover:bg-muted/50 transition-colors shadow-sm"
+          >
+            Docs
+          </a>
         </nav>
       </header>
 
       {/* Hero */}
-      <section class="pt-8 sm:pt-12 pb-10 sm:pb-14">
-        <h1 class="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.15] tracking-tight text-foreground text-balance">
+      <section class="pt-10 sm:pt-14 pb-6">
+        <h1 class="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.15] tracking-tight text-foreground text-center text-balance">
           Use <a href="https://obsidian.md" target="_blank" class="text-primary no-underline hover:no-underline">Obsidian</a> as a CMS
           <br class="hidden sm:block" /> for your Astro site.
         </h1>
-      </section>
-
-      {/* Steps */}
-      <section class="pb-10 sm:pb-14">
-        <Steps client:load />
-        
-        <div class="mt-12 flex justify-center">
-          <a
-            href="https://docs.vaultcms.org"
-            class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-heading font-medium transition-all shadow-md hover:shadow-primary/20 active:scale-95 group"
-          >
-            Explore Docs
-            <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-          </a>
+        <div class="mt-8 flex justify-center w-full">
+          <MainTabs client:load />
         </div>
       </section>
     </div>
 
     {/* Footer */}
-    <footer class="py-6 text-center text-sm text-muted-foreground">
+    <footer class="py-4 text-center text-sm text-muted-foreground">
       &copy; 2026{" "}
       <a
         href="https://davidvkimball.com"
@@ -80,3 +54,19 @@ import logoDark from "../assets/vault-cms-logo-horizontal-on-dark.png";
     </footer>
   </div>
 </Layout>
+
+<style>
+  .logo-link {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url('/vault-cms-logo-horizontal.png');
+  }
+
+  :global(.dark) .logo-link {
+    background-image: url('/vault-cms-logo-horizontal-on-dark.png');
+  }
+</style>

@@ -22,8 +22,3 @@
   to = "https://docs.vaultcms.org/:splat"
   status = 301
   force = true
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 404

@@ -50,7 +50,7 @@ export function Steps() {
           </span>
         </div>
         <h3 className="font-heading text-lg text-foreground">
-          Run the installer in your Astro project
+          Run the installer in the root of your Astro project
         </h3>
         <InstallTabs />
       </li>
