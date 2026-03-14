@@ -5,17 +5,19 @@ import { Download, Terminal, FolderOpen } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "./ui/tabs";
 import { VersionDisplay } from "./VersionDisplay";
 import { Steps } from "./steps";
+import { ThemeCarousel } from "./ThemeCarousel";
 
 export function MainTabs() {
   const [hasDownloaded, setHasDownloaded] = useState(false);
 
   return (
     <div className="w-full mx-auto mt-4">
+      <ThemeCarousel />
       <Tabs defaultValue="download" className="w-full flex justify-center flex-col items-center">
         <TabsList className="grid w-72 grid-cols-2">
           <TabsTrigger value="download" className="flex items-center gap-2">
             <FolderOpen className="w-4 h-4" />
-            Manual
+            Manual install
           </TabsTrigger>
           <TabsTrigger value="cli" className="flex items-center gap-2">
             <Terminal className="w-4 h-4" />
@@ -34,9 +36,9 @@ export function MainTabs() {
           <div className="mt-4">
             <VersionDisplay />
           </div>
-          
+
           {hasDownloaded && (
-            <div className="mt-8 rounded-lg border border-border bg-card p-5 w-full text-left shadow-sm animate-in fade-in slide-in-from-bottom-2 duration-500">
+            <div className="mt-4 rounded-lg border border-border bg-card p-5 w-full text-left shadow-sm animate-in fade-in slide-in-from-bottom-2 duration-500">
               <h2 className="font-heading text-sm font-medium text-foreground flex items-center gap-2">
                 <FolderOpen className="w-4 h-4" />
                 Where to place the files

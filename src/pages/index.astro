@@ -17,8 +17,9 @@ import { MainTabs } from "../components/MainTabs";
             rel="noopener noreferrer"
             class="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5"
             title="GitHub"
+            aria-label="GitHub"
           >
-            <Github className="w-5 h-5" />
+            <Github className="w-5 h-5" aria-hidden="true" />
           </a>
           <a
             href="https://docs.vaultcms.org"
@@ -30,12 +31,12 @@ import { MainTabs } from "../components/MainTabs";
       </header>
 
       {/* Hero */}
-      <section class="pt-10 sm:pt-14 pb-6">
+      <section class="pt-6 sm:pt-8 pb-6">
         <h1 class="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-[1.15] tracking-tight text-foreground text-center text-balance">
           Use <a href="https://obsidian.md" target="_blank" class="text-primary no-underline hover:no-underline">Obsidian</a> as a CMS
           <br class="hidden sm:block" /> for your Astro site.
         </h1>
-        <div class="mt-8 flex justify-center w-full">
+        <div class="mt-4 flex justify-center w-full">
           <MainTabs client:load />
         </div>
       </section>
