@@ -1,14 +1,15 @@
-# v0 runtime files (should only exist in preview, not in git)
-__v0_runtime_loader.js
-__v0_devtools.tsx
-__v0_jsx-dev-runtime.ts
-instrumentation-client.js
-instrumentation-client.ts
-
-# Common ignores
+# Dependencies
 node_modules/
-.next/
-.env*.local
-.DS_Store
+
+# Astro build output and generated types (Netlify rebuilds dist on deploy)
+dist/
+.astro/
+
 # Local Netlify folder
 .netlify
+
+# Environment
+.env*.local
+
+# OS
+.DS_Store
