@@ -8,3 +8,4 @@ minimumReleaseAgeExclude:
   - astro
   - '@astrojs/markdown-satteri'
   - vscode-languageserver-protocol
+  - '@astrojs/netlify@8.2.0'
