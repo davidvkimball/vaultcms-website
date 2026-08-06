@@ -13,6 +13,7 @@ export default defineConfig({
   site: 'https://vaultcms.org',
   integrations: [react(), tailwind()],
   output: 'static',
+  server: { port: 4340 },
   vite: {
     resolve: {
       alias: {
