@@ -28,7 +28,7 @@ export function MainTabs() {
           <a
             href="/api/download-latest"
             onClick={() => setHasDownloaded(true)}
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-heading font-medium transition-all shadow-md hover:shadow-primary/20 active:scale-95 group"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-heading font-medium transition-all shadow-md hover:shadow-lg hover:shadow-primary/20 active:opacity-90 active:shadow-sm group"
           >
             <Download className="w-5 h-5" />
             Download
@@ -46,7 +46,7 @@ export function MainTabs() {
               <ol className="mt-3 space-y-2 text-sm text-muted-foreground list-decimal list-inside">
                 <li>Extract the ZIP you downloaded.</li>
                 <li>Copy the <code className="font-mono text-[13px] text-accent-foreground bg-muted px-1.5 py-0.5 rounded">.obsidian</code> and <code className="font-mono text-[13px] text-accent-foreground bg-muted px-1.5 py-0.5 rounded">_bases</code> folders (and <code className="font-mono text-[13px] text-accent-foreground bg-muted px-1.5 py-0.5 rounded">_GUIDE.md</code>) into your Astro project.</li>
-                <li>Recommended location: <code className="font-mono text-[13px] text-accent-foreground bg-muted px-1.5 py-0.5 rounded">src/content</code> — or your project root if you prefer.</li>
+                <li>Recommended location: <code className="font-mono text-[13px] text-accent-foreground bg-muted px-1.5 py-0.5 rounded">src/content</code>, or your project root if you prefer.</li>
                 <li>Open that folder as a vault in Obsidian.</li>
               </ol>
             </div>
